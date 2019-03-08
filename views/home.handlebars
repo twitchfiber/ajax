@@ -1,0 +1,46 @@
+
+<fieldset>
+<form>
+    <label>Name of Exercise</label>
+    <input type="text" name="name" id="name">
+    <br>
+    
+    <label>Reps</label>
+    <input type="number" name="reps" id="reps">
+    <br>
+    
+    <label>Weight</label>
+    <input type="number" name="weight" id="weight">
+    <br>
+   
+    <label>Unit</label>
+    <select name="unit" id="unit">
+        <option>kgs</option>
+        <option>lbs</option>
+    </select>
+    <br>
+
+    <label>Date Completed</label>
+    <input type="date" name="date" placeholder="MM-DD-YYYY" id="date">
+    <input type="submit" value="Insert" id="insert">
+</form>
+</fieldset>
+
+<input style="display: none;" type="submit" value="Query" id="get">
+
+
+<table>
+    <thead>
+        <tr>
+            <th scope="col">Name of Exercise</th>
+            <th scope="col">Reps</th>
+            <th scope="col">Weight</th>
+            <th scope="col">Unit</th>
+            <th scope="col">Date Completed</th>
+        </tr>
+    </thead>
+    <tbody id="output">
+        {{!-- append rows here! --}}
+    </tbody>
+</table>
+<script src="script.js"></script>
