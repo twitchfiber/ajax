@@ -119,6 +119,6 @@ app.get("/reset-table", (req, res) => {
     });
 });
 
-app.listen(8000, () => {
+app.listen(7878, () => {
     console.log("Server started");
 });
